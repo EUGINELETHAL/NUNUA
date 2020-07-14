@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-import django-heroku
+import django_heroku
 from decouple import config
 import sys
 import cloudinary
@@ -34,7 +34,7 @@ except ImportError:
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-db_from_env = dj_database_url.config(conn_max_age=500)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -108,7 +108,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-DATABASES['default'].update(db_from_env)
+
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
