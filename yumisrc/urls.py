@@ -21,9 +21,7 @@ from django.urls import path, re_path
 
 
 urlpatterns = [
-    re_path(r'^jet/', include('jet.urls', 'jet')),
-    url(r'^search/', include('haystack.urls')),
-    re_path(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
+    url(r'^search/', include('haystack.urls')),  # Django JET dashboard URLS
     re_path('admin/', admin.site.urls),
     re_path(r'', include('landpage.urls',namespace='landpage' )),
     re_path(r'', include('registration.urls')),
