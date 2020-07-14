@@ -52,9 +52,7 @@ INSTALLED_APPS = [
     'adverts.apps.AdvertsConfig',
     'landpage',
     'registration',
-    'login',
-    'jet',
-    'jet.dashboard', 
+    'login', 
     'pyuploadcare.dj',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -108,7 +106,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-DATABASES['default'].update(db_from_env)
+
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
