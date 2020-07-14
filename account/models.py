@@ -62,7 +62,7 @@ class UserProfile(models.Model):
     bio = models.TextField(max_length=500, blank=True, null=True)
     title = models.CharField(max_length=4, blank=True, null=True)
     county = models.CharField(max_length=127, choices=COUNTY_CATEGORY_TYPES,  blank=True,null=True,  default='Kenya')
-    phone_number = models.IntegerField()
+    phone_number = models.IntegerField(blank=True, null=True)
     town = models.CharField(max_length=127, choices=TOWN_CATEGORY_TYPES,  blank=True,null=True,  default='Nairobi')
     saved_ads = models.ManyToManyField(Advert, related_name='user_ads')
 
