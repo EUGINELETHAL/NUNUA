@@ -68,7 +68,7 @@ class UserProfile(models.Model):
 
     def create_user_profile(sender, **kwargs):
             if kwargs['created']:
-                userprofile = UserProfile.objects.create(user=kwargs['instance'])
+                UserProfile.objects.create(user=kwargs['instance'])
 
     post_save.connect(create_user_profile, sender=User)
 
