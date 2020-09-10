@@ -1,22 +1,16 @@
 # NUNUA
-Nunua is a classifieds platform built with Django
-Simple Django Classified Advertising App
+Nunua is a  Classified Advertising platform built with Django
+  
 
 Build Status
 Features
-
-    Item groups, categories and areas (for ex. Cities ot Locations)
-    Image
-      
-    Search ability
+   Users can create an account
+   Sellers can post ads
+   Customers can search for ads based on location,caomtegory
+   Customers can like Ads
+   Customers can Review ads
+   Customers can Save ads
     SEO optimization
-        SEO-friendly urls
-        generating META description and meta keywords
-        sitemap.xml
-        robots.txt
-        RSS feed
-        Google Analytics integration
-        Open Graph protocol support
     Caching
     
 
@@ -26,8 +20,7 @@ Requirements
     Django >=2.0
 
 Design
-
-    Twitter Bootstrap Jumbotron
+	Twitter Bootstrap Jumbotron
 live demo:https://www.yumi.co.ke/
 heroku demo:https://nunua-soko.herokuapp.com/land_page
 
